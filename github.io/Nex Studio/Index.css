@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Ma+Shan+Zheng&family=Poppins&family=Salsa&display=swap');
+body {
+    margin: 0%;
+    background: radial-gradient(circle, #091322, #000000);
+    background-size: cover;
+    background-position: center;
+    overflow-y: none;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #08161f;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #020b2b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #525f8f;
+}
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 500px;
+    height: 230px;
+    align-items: center;
+    
+}
+.Logo-Principal {
+    display: flex;
+    margin: 40px 0 0 80px;
+    padding-right: 200px;
+    width: 200px;
+    height: 201px;
+    cursor: pointer;
+}
+.container-icon-menu{
+    display: flex;
+    float: right;  
+}
+.email, .github, .wapp {
+    display: flex;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+}
+.email {
+    color: #E3B505;
+}
+.github {
+    color: #60695C;
+}
+.wapp {
+    color: #16B12F;
+}
+.Posicionamento-sections{
+    display: flex;
+
+}
+.container-principal{
+    opacity: 1;
+    margin-left: 160px;
+    display: grid;
+    width: 887px;
+    height: 499px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    margin: 0;
+    font-family: 'Gruppo',arial;
+    font-size: 128px; 
+    background: -webkit-radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.texto{
+    font-family: 'Poppins',arial;
+    font-size: 20px;
+    color: #FFF;
+    width: 516px;
+    height: 180px;
+    margin: 0;
+}
+hr{
+    width: 640px;
+    height: 3px;
+    border: 0;
+    background-image: radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+}
+hr:nth-child(2){
+    grid-column: span 2;
+}
+.container-icones-linguagens{
+    display: flex;
+    flex-direction: row;
+}
+.html, .css, .js, .python {
+    font-size: 30px;
+    padding-right: 20px;
+    margin-top: -35px;
+}
+.html{
+    color: #A94F0E;
+}
+.css{
+    color: #1982C4;
+}
+.js{
+    color: #E3B505;
+}
+.python{
+    color: #22529F;
+}
+.container-projetos{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10;
+    width: 249px;
+    height: 100%;
+    margin-left: 160px;
+}
+.titulo-projeto{
+    margin-top: 100px;
+    font-family: 'poppins',arial;
+    font-size: 40px;
+    font-weight: bold;
+    background: -webkit-radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+button {
+    width: 118px;
+    height: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Poppins',arial;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 130px;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  .Rodape{
+    display: flex;
+    float: right;
+    padding-right: 135px;
+    margin-top: -60px;
+  }
+
+  /* Section Oculta Barbershop */
+  .container-BarberShop{
+    
+    margin-left: 160px;
+    display: grid;
+    width: 887px;
+    height: 499px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto-barbershop{
+    color: #FFF;
+    font-family: 'Poppins',arial;
+    font-size: 17px;
+    overflow-y: auto;
+    max-width: 516px;
+    max-height: 200px;
+  }
+  .site {
+    font-size: 20px;
+    font-family: 'Poppins',arial;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    background: -webkit-radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  .site:focus,
+  .site:hover {
+    color: #fff;
+  }
+  
+  .site:focus:after,
+  .site:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .site:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: radial-gradient(circle, #1982C4,rgba(25, 130, 196, 0));
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+                        /* tablet */
+@media screen and (max-width: 850px) and (orientation: portrait){
+    body {
+        margin: 0%;
+        background: radial-gradient(circle, #091322, #000000);
+        background-size: cover;
+        background-position: center;
+    }
+    header{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 100px;
+        height: 200px;
+        align-items: center;
+    }
+    .Logo-Principal {
+        display: flex;
+        margin: 40px 0 0 80px;
+        padding-right: 0%;
+        width: 153px;
+        height: 154px;
+    }
+    .container-icon-menu{
+        display: flex;
+        padding-left: 100px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-principal{
+        margin-top: 20%;
+        margin-left: 80px;
+        display: grid;
+        width: 504px;
+        height: 400px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo{
+        margin: 0;
+        width: 400px;
+        font-family: 'Gruppo',arial;
+        font-size: 80px; 
+        background: -webkit-radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .texto{
+        font-family: 'Poppins',arial;
+        font-size: 15px;
+        color: #FFF;
+        width: 387px;
+        height: 138px;
+        margin: 0;
+    }
+    hr{
+        width: 458px;
+        height: 3px;
+        border: 0;
+        background-image: radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+    }
+    .container-projetos{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-gap: 10;
+        width: 170px;
+        height: 100%;
+        margin-left: 60px;
+        margin-top: 5%;
+    }
+    .Rodape{
+        display: flex;
+        float: right;
+        padding-right: 0;
+        margin-top: 60px;
+      }
+
+      /* Section Oculta BarberShop */
+      .container-BarberShop{
+        margin-top: 60px;
+        margin-left: 100px;
+        display: grid;
+        width: 523px;
+        height: 389px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      .texto-barbershop{
+        color: #FFF;
+        font-family: 'Poppins',arial;
+        font-size: 14px;
+      }
+}
+                           /* Mobile */
+@media screen and (max-width: 450px) and (orientation: portrait){
+    body {
+        margin: 0%;
+        background: radial-gradient(circle, #091322, #000000);
+        background-size: cover;
+        background-position: center;
+    }
+    header{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+        height: 90px;
+    }
+    .Logo-Principal {
+        display: flex;
+        margin: 20px 0 0 20px;
+        padding: 0%;
+        width: 112px;
+        height: 113px;
+    }
+    .container-icon-menu{
+        padding-left: 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .container-principal{
+        margin-top: 15%;
+        margin-left: 40px;
+        display: grid;
+        width: auto;
+        height: 382px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo{
+        margin: 0;
+        width: 250px;
+        font-family: 'Gruppo',arial;
+        font-size: 50px; 
+        background: -webkit-radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .texto{
+        font-family: 'Poppins',arial;
+        font-size: 15px;
+        color: #FFF;
+        width: 303px;
+        height: 184px;
+        margin: 0;
+    }
+    hr{
+        width: 320px;
+        height: 3px;
+        border: 0;
+        background-image: radial-gradient(circle, #1982C4, rgba(25, 130, 196, 0));
+    }
+    .html, .css, .js, .python {
+        font-size: 20px;
+        padding-right: 20px;
+        margin-top: -30px;
+        cursor: pointer;
+    }
+    .Posicionamento-sections{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .container-projetos{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-gap: 10;
+        width: 249px;
+        height: 100%;
+        margin-left: 60px;
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+    .Rodape{
+        display: flex;
+        float: right;
+        padding-right: 135px;
+        margin-top: -60px;
+        width: 131px;
+        height: 35px;
+        padding-top: 100px;
+        align-items: center;
+      }
+       /* Section Oculta BarberShop */
+       .container-BarberShop{
+        margin-top: 60px;
+        margin-left: 40px;
+        display: grid;
+        width: 314px;
+        height: 389px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+       .texto-barbershop{
+        color: #FFF;
+        font-family: 'Poppins',arial;
+        font-size: 13px;
+        width: 280px;
+        height: 180px;
+      }
+}
+
+.secao {
+    position: relative;
+    display: none;
+}
+
+.secao.active {
+    display: block;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.hidden {
+    display: none;
+}
